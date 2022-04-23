@@ -1,8 +1,15 @@
 <div class="inqoo-container">
 
   <div class="inqoo-container--row">
-    <app-inqoo-accordion [items]="accordionItems"></app-inqoo-accordion>
+    <app-inqoo-accordion [items]="accordionItems01" [alwaysOpen]="false"></app-inqoo-accordion>
   </div>
+
+  <hr>
+
+  <div class="inqoo-container--row">
+    <app-inqoo-accordion [items]="accordionItems02" [alwaysOpen]="true"></app-inqoo-accordion>
+  </div>
+
 
   <div class="inqoo-container--row">
     <app-inqoo-button [size]="'large'" [color]="'secondary'" (onClick)="onLargeSecButtonCounter()">
