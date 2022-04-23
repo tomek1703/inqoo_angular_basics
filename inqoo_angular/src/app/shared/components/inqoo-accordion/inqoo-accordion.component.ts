@@ -10,4 +10,7 @@ export class InqooAccordionComponent {
 
   @Input() items: InqooAccorrionItem[] = [];
 
+  onItemExpand = (expanded: boolean, index: number) => {
+    console.log('onItemExpand: ', index, expanded);
+  }
 }
