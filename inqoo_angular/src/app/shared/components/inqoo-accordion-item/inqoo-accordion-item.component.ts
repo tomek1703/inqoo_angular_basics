@@ -8,9 +8,9 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 export class InqooAccordionItemComponent{
 
   @Input() label: string = '';
-  @Output() onExpandClick = new EventEmitter<boolean>()
+  @Input() expanded: boolean = false;
 
-  expanded: boolean = false;
+  @Output() onExpandClick = new EventEmitter<boolean>()
 
   onClick = () => {
     this.expanded = !this.expanded;

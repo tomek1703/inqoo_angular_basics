@@ -11,10 +11,10 @@ export class AppComponent {
   title = 'inqoo_angular';
 
   accordionItems: InqooAccorrionItem[] = [
-    {label: 'Label 01', content: 'Content 01'},
-    {label: 'Label 02', content: 'Content 02'},
-    {label: 'Label 03', content: 'Content 03'},
-    {label: 'Label 04', content: 'Content 04'}
+    {label: 'Label 01', content: 'Content 01', expanded: false},
+    {label: 'Label 02', content: 'Content 02', expanded: false},
+    {label: 'Label 03', content: 'Content 03', expanded: false},
+    {label: 'Label 04', content: 'Content 04', expanded: false}
   ];
 
   largeSecButtonCounter: number = 0;

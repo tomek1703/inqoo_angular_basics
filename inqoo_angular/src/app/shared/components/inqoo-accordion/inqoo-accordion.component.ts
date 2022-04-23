@@ -11,6 +11,7 @@ export class InqooAccordionComponent {
   @Input() items: InqooAccorrionItem[] = [];
 
   onItemExpand = (expanded: boolean, index: number) => {
-    console.log('onItemExpand: ', index, expanded);
+    this.items = this.items.map((item, i) =>
+      ({...item, expanded: i === index ? item.expanded = expanded : false}))
   }
 }
