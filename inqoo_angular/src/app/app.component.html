@@ -1,23 +1,23 @@
-<div style="margin: 30px">
+<div class="inqoo-container">
 
-  <div style="margin: 5px; display: flex">
-    <app-inqoo-button [size]="'large'" [color]="'secondary'">
+  <div class="inqoo-container--row">
+    <app-inqoo-button [size]="'large'" [color]="'secondary'" (buttonCustomClick)="onLargeSecButtonCounter()">
       Click me 01!
     </app-inqoo-button>
-    <app-inqoo-badge></app-inqoo-badge>
+    <app-inqoo-badge [counter]="largeSecButtonCounter"></app-inqoo-badge>
   </div>
 
-  <div style="margin: 5px; display: flex">
-    <app-inqoo-button [size]="'small'" [color]="'warning'">
+  <div class="inqoo-container--row">
+    <app-inqoo-button [size]="'small'" [color]="'warning'" (buttonCustomClick)="onSmallWarningButtonCounter()">
       Click me 02!
     </app-inqoo-button>
-    <app-inqoo-badge></app-inqoo-badge>
+    <app-inqoo-badge [counter]="smallWarningButtonCounter"></app-inqoo-badge>
   </div>
 
-  <div style="margin: 5px; display: flex">
-    <app-inqoo-button (buttonCustomClick)="onButtonCustomClick($event)">
+  <div class="inqoo-container--row">
+    <app-inqoo-button (buttonCustomClick)="onDefaultButtonCustomClick($event)">
       Click me 03!
     </app-inqoo-button>
-    <app-inqoo-badge></app-inqoo-badge>
+    <app-inqoo-badge [counter]="defaultButtonCounter"></app-inqoo-badge>
   </div>
 </div>

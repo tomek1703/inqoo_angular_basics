@@ -9,6 +9,12 @@ import {InqooButtonClickEvent} from "./shared/models/inqoo-button-click-event";
 export class AppComponent {
   title = 'inqoo_angular';
 
+  largeSecButtonCounter: number = 0;
+  defaultButtonCounter: number = 0;
+  smallWarningButtonCounter: number = 0;
 
-  onButtonCustomClick = (event: InqooButtonClickEvent) => console.log('onButtonCustomClick', event);
+  onLargeSecButtonCounter = () => this.largeSecButtonCounter += 1;
+  onSmallWarningButtonCounter = () => this.smallWarningButtonCounter += 1;
+  onDefaultButtonCustomClick = (event: InqooButtonClickEvent) => this.defaultButtonCounter += 1;
 }
+
