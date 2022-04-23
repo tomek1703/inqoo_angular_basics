@@ -1,21 +1,21 @@
 <div class="inqoo-container">
 
   <div class="inqoo-container--row">
-    <app-inqoo-button [size]="'large'" [color]="'secondary'" (buttonCustomClick)="onLargeSecButtonCounter()">
+    <app-inqoo-button [size]="'large'" [color]="'secondary'" (onClick)="onLargeSecButtonCounter()">
       Click me 01!
     </app-inqoo-button>
     <app-inqoo-badge [counter]="largeSecButtonCounter"></app-inqoo-badge>
   </div>
 
   <div class="inqoo-container--row">
-    <app-inqoo-button [size]="'small'" [color]="'warning'" (buttonCustomClick)="onSmallWarningButtonCounter()">
+    <app-inqoo-button [size]="'small'" [color]="'warning'" (onClick)="onSmallWarningButtonCounter()">
       Click me 02!
     </app-inqoo-button>
     <app-inqoo-badge [counter]="smallWarningButtonCounter"></app-inqoo-badge>
   </div>
 
   <div class="inqoo-container--row">
-    <app-inqoo-button (buttonCustomClick)="onDefaultButtonCustomClick($event)">
+    <app-inqoo-button (onClick)="onDefaultButtonCustomClick($event)">
       Click me 03!
     </app-inqoo-button>
     <app-inqoo-badge [counter]="defaultButtonCounter"></app-inqoo-badge>
