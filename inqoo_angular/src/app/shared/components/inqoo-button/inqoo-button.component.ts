@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, Output, OnInit, EventEmitter} from '@angular/core';
+import {InqooButtonClickEvent} from "../../models/inqoo-button-click-event";
 
 @Component({
   selector: 'app-inqoo-button',
@@ -7,11 +8,16 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class InqooButtonComponent implements OnInit {
 
-  @Input() size: 'small' | 'large' | 'default' = "default";
+  @Input() color: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' = 'primary';
+  @Input() size: 'small' | 'large' | 'default' = 'default';
+
+  @Output() buttonCustomClick = new EventEmitter<InqooButtonClickEvent>();
 
   ngOnInit() {
       console.log(this.size)
   }
+
+  onClick = () => this.buttonCustomClick.emit({ color: this.color, size: this.size, timestamp: Date.now()});
 
   isSmall = () => this.size === 'small';
   isLarge = () => this.size === 'large';
