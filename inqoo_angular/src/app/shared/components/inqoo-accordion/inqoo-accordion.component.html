@@ -1,1 +1,3 @@
-<p>inqoo-accordion works!</p>
+<app-inqoo-accordion-item *ngFor="let item of items" [label]="item.label">
+  {{ item.content }}
+</app-inqoo-accordion-item>

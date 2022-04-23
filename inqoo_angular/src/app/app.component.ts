@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {InqooButtonClickEvent} from "./shared/models/inqoo-button-click-event";
+import {InqooAccorrionItem} from "./shared/models/inqoo-accorrion-item";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,13 @@ import {InqooButtonClickEvent} from "./shared/models/inqoo-button-click-event";
 })
 export class AppComponent {
   title = 'inqoo_angular';
+
+  accordionItems: InqooAccorrionItem[] = [
+    {label: 'Label 01', content: 'Content 01'},
+    {label: 'Label 02', content: 'Content 02'},
+    {label: 'Label 03', content: 'Content 03'},
+    {label: 'Label 04', content: 'Content 04'}
+  ];
 
   largeSecButtonCounter: number = 0;
   defaultButtonCounter: number = 0;
