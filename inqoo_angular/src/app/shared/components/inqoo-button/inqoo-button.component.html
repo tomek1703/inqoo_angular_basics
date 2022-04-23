@@ -1,2 +1,3 @@
-<button class="btn btn-outline-primary">bootstrap</button>
-<button>plain</button>
+<button class="btn btn-outline-primary" [ngClass]="{'btn-lg': isLarge(), 'btn-sm': isSmall()}">
+  <ng-content></ng-content>
+</button>
