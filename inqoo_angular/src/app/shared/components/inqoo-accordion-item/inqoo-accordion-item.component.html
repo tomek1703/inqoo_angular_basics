@@ -1,1 +1,12 @@
-<p>inqoo-accordion-item works!</p>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" type="button" (click)="onClick()">
+      {{ label }}
+    </button>
+  </h2>
+  <div *ngIf="expanded" class="accordion-collapse collapse show">
+    <div class="accordion-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

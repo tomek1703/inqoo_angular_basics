@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-inqoo-accordion-item',
   templateUrl: './inqoo-accordion-item.component.html',
   styleUrls: ['./inqoo-accordion-item.component.scss']
 })
-export class InqooAccordionItemComponent implements OnInit {
+export class InqooAccordionItemComponent{
 
-  constructor() { }
+  @Input() label: string = '';
 
-  ngOnInit(): void {
-  }
+  expanded: boolean = false;
+
+  onClick = () => this.expanded = !this.expanded;
 
 }
