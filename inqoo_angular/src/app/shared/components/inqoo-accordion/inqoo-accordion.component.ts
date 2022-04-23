@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {InqooAccorrionItem} from "../../models/inqoo-accorrion-item";
+import {InqooAccordionItem} from "../../models/inqoo-accordion-item";
 
 @Component({
   selector: 'app-inqoo-accordion',
@@ -8,7 +8,7 @@ import {InqooAccorrionItem} from "../../models/inqoo-accorrion-item";
 })
 export class InqooAccordionComponent {
 
-  @Input() items: InqooAccorrionItem[] = [];
+  @Input() items: InqooAccordionItem[] = [];
 
   onItemExpand = (expanded: boolean, index: number) => {
     this.items = this.items.map((item, i) =>

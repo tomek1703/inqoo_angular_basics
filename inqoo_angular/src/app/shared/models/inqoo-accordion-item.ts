@@ -1,4 +1,4 @@
-export interface InqooAccorrionItem{
+export interface InqooAccordionItem {
   label: string;
   content: string;
   expanded: boolean;
