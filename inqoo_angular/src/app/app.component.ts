@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {RoutesConfig} from "./app-routing.module";
 
 @Component({
   selector: 'app-root',
@@ -11,16 +12,16 @@ export class AppComponent {
   routes: { label: string, route: string }[] = [
     {
       label: 'Home',
-      route: 'home'
+      route: RoutesConfig.home
     }, {
       label: 'Starships',
-      route: 'sw-starships'
+      route: RoutesConfig.swStarships
     }, {
       label: 'People',
-      route: 'sw-people'
+      route: RoutesConfig.swPeople
     }, {
       label: 'Components',
-      route: 'components'
+      route: RoutesConfig.components
     }];
 }
 

@@ -8,11 +8,18 @@ import {
   ComponentsShowroomPageComponent
 } from "./shared/pages/components-showroom-page/components-showroom-page.component";
 
+export const enum RoutesConfig{
+  home= 'home',
+  swStarships = 'sw-starships',
+  swPeople = 'sw-people',
+  components = 'components'
+}
+
 const routes: Routes = [
-  {path: 'home', component: HomePageComponent},
-  {path: 'sw-starships', component: SwStarshipsPageComponent},
-  {path: 'sw-people', component: SwPeoplePageComponent},
-  {path: 'components', component: ComponentsShowroomPageComponent},
+  {path: RoutesConfig.home, component: HomePageComponent},
+  {path: RoutesConfig.swStarships, component: SwStarshipsPageComponent},
+  {path: RoutesConfig.swPeople, component: SwPeoplePageComponent},
+  {path: RoutesConfig.components, component: ComponentsShowroomPageComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: NotFoundPageComponent},
 ];
