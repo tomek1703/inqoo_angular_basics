@@ -6,6 +6,7 @@ import { InqooAccordionItemComponent } from './components/inqoo-accordion-item/i
 import { InqooAccordionComponent } from './components/inqoo-accordion/inqoo-accordion.component';
 import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.component';
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
+import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
 
 
 
@@ -17,6 +18,7 @@ import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.com
     InqooAccordionComponent,
     InqooClockComponent,
     InqooNavbarComponent,
+    ComponentsShowroomPageComponent,
   ],
   imports: [
     CommonModule
