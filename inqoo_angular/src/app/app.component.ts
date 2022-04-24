@@ -9,6 +9,7 @@ import {InqooAccordionItem} from "./shared/models/inqoo-accordion-item";
 })
 export class AppComponent {
   title = 'inqoo_angular';
+  showClock: boolean = true;
 
   accordionItems01: InqooAccordionItem[] = [
     {label: 'Label 01', content: 'Content 01', expanded: false},
@@ -28,6 +29,7 @@ export class AppComponent {
   defaultButtonCounter: number = 0;
   smallWarningButtonCounter: number = 0;
 
+  toggleClock = () => this.showClock = !this.showClock;
   onLargeSecButtonCounter = () => this.largeSecButtonCounter += 1;
   onSmallWarningButtonCounter = () => this.smallWarningButtonCounter += 1;
   onDefaultButtonCustomClick = (event: InqooButtonClickEvent) => this.defaultButtonCounter += 1;
