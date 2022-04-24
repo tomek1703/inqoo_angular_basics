@@ -7,6 +7,7 @@ import { InqooAccordionComponent } from './components/inqoo-accordion/inqoo-acco
 import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.component';
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
 import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -21,7 +22,8 @@ import { ComponentsShowroomPageComponent } from './pages/components-showroom-pag
     ComponentsShowroomPageComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     InqooButtonComponent,

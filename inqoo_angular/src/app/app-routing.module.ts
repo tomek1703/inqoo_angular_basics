@@ -9,12 +9,12 @@ import {
 } from "./shared/pages/components-showroom-page/components-showroom-page.component";
 
 const routes: Routes = [
-  {path: '', component: HomePageComponent},
+  {path: 'home', component: HomePageComponent},
   {path: 'sw-starships', component: SwStarshipsPageComponent},
   {path: 'sw-people', component: SwPeoplePageComponent},
   {path: 'components', component: ComponentsShowroomPageComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: NotFoundPageComponent},
-  // {path: '', redirectTo: '/sw-starships', pathMatch: 'full'},
 ];
 
 @NgModule({

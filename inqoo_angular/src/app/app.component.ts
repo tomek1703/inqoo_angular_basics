@@ -10,14 +10,17 @@ export class AppComponent {
 
   routes: { label: string, route: string }[] = [
     {
+      label: 'Home',
+      route: 'home'
+    }, {
       label: 'Starships',
-      route: ''
+      route: 'sw-starships'
     }, {
       label: 'People',
-      route: ''
+      route: 'sw-people'
     }, {
       label: 'Components',
-      route: ''
+      route: 'components'
     }];
 }
 
