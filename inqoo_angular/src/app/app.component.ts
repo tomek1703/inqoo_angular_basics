@@ -11,6 +11,18 @@ export class AppComponent {
   title = 'inqoo_angular';
   showClock: boolean = true;
 
+  routes: { label: string, route: string }[] = [
+    {
+      label: 'Starships',
+      route: ''
+    }, {
+      label: 'People',
+      route: ''
+    }, {
+      label: 'Components',
+      route: ''
+    }];
+
   accordionItems01: InqooAccordionItem[] = [
     {label: 'Label 01', content: 'Content 01', expanded: false},
     {label: 'Label 02', content: 'Content 02', expanded: false},
