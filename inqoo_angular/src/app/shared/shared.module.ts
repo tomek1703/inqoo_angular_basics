@@ -8,6 +8,7 @@ import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.compon
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
 import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
 import {RouterModule} from "@angular/router";
+import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component';
 
 
 
@@ -20,6 +21,7 @@ import {RouterModule} from "@angular/router";
     InqooClockComponent,
     InqooNavbarComponent,
     ComponentsShowroomPageComponent,
+    InqooDateComponent,
   ],
   imports: [
     CommonModule,
